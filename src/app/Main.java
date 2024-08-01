@@ -20,17 +20,20 @@ public class Main {
         point++;
         System.out.printf(point + ") Сума всіх від'ємних чисел в масиві: %d%n", negativeSum);
 
+        int negative = 0;
+        int parni = 0;
+
         for (int num : nums1) {
             if (num % 2 == 0) {
-                negativeSum++;
+                negative++;
             } else {
-                negativeSum++;
+                parni++;
             }
         }
 
         point++;
-        System.out.printf(point + ") Кількість парних чисел в масиві: %d%n", negativeSum);
-        System.out.printf("  Кількість непарних чисел в масиві: %d%n", negativeSum);
+        System.out.printf(point + ") Кількість парних чисел в масиві: %d%n", parni);
+        System.out.printf("  Кількість непарних чисел в масиві: %d%n", negative);
 
         int max = nums1[0];
         int min = nums1[0];
