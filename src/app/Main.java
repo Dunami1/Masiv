@@ -20,20 +20,19 @@ public class Main {
         point++;
         System.out.printf(point + ") Сума всіх від'ємних чисел в масиві: %d%n", negativeSum);
 
-        int negative = 0;
+        int unpaired = 0;
         int parni = 0;
 
         for (int num : nums1) {
             if (num % 2 == 0) {
-                negative++;
+                unpaired++;
             } else {
                 parni++;
             }
         }
 
         point++;
-        System.out.printf(point + ") Кількість парних чисел в масиві: %d%n", parni);
-        System.out.printf("  Кількість непарних чисел в масиві: %d%n", negative);
+        System.out.printf(point + ") Кількість парних чисел в масиві: %d%n" + "   Кількість непарних чисел в масиві: %d%n", parni, unpaired);
 
         int max = nums1[0];
         int min = nums1[0];
@@ -52,8 +51,7 @@ public class Main {
         }
 
         point++;
-        System.out.printf(point + ") Найбільший елемент: %d, Індекс: %d%n", max, maxIndex);
-        System.out.printf("  Найменший елемент: %d, Індекс: %d%n", min, minIndex);
+        System.out.printf(point + ") Найбільший елемент: %d, Індекс: %d%n" + "   Найменший елемент: %d, Індекс: %d%n", max, maxIndex, min, minIndex);
 
         int firstNegativeIndex = -1;
         for (int i = 0; i < nums1.length; i++) {
